@@ -80,11 +80,11 @@ public class EmailServiceImpl implements EmailService {
             request.setEndpoint("mail/send");
             Response response = sendGrid.api(request);
 
-            if(response.getStatusCode() == 202) {
-                log.info("Sending email verification successfully");
-            } else {
-                log.info("Sending email failed");
-            }
+//            if(response.getStatusCode() == 202) {
+//                log.info("Sending email verification successfully");
+//            } else {
+//                log.info("Sending email failed");
+//            }
         } catch (Exception ex) {
             log.info("Sending email verification failed, message = {}", ex);
         }
