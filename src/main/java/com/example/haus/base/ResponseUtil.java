@@ -8,6 +8,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 
 public class ResponseUtil {
+
+    private ResponseUtil() {}
+
     public static ResponseEntity<ResponseData<?>> success(String message, Object data) {
         return success(HttpStatus.OK, message, data);
     }

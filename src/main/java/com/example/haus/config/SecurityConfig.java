@@ -1,7 +1,6 @@
 package com.example.haus.config;
 
 import com.example.haus.constant.RoleConstant;
-import com.example.haus.repository.UserRepository;
 import com.example.haus.security.CustomUserDetailsService;
 import com.example.haus.security.CustomizePreFilter;
 import lombok.AccessLevel;
@@ -67,7 +66,6 @@ public class SecurityConfig {
                                 .requestMatchers(swaggerEndpoints).permitAll()
                                 .requestMatchers(userEndpoints).hasAnyAuthority(RoleConstant.USER, RoleConstant.ADMIN)
                                 .requestMatchers(adminEndpoints).hasAnyAuthority(RoleConstant.ADMIN)
-
                                 .requestMatchers(HttpMethod.GET, "/api/v1/category").hasAnyAuthority(RoleConstant.ADMIN, RoleConstant.USER)
                                 .requestMatchers(HttpMethod.GET, "/api/v1/promotion").hasAnyAuthority(RoleConstant.ADMIN, RoleConstant.USER)
                                 .anyRequest().authenticated())

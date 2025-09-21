@@ -78,7 +78,7 @@ public class EmailServiceImpl implements EmailService {
             request.setMethod(Method.POST);
             request.setBody(mail.build());
             request.setEndpoint("mail/send");
-            Response response = sendGrid.api(request);
+//            Response response = sendGrid.api(request);
 
 //            if(response.getStatusCode() == 202) {
 //                log.info("Sending email verification successfully");
