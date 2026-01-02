@@ -39,9 +39,9 @@ spring:
   #    port: ${REDIS_PORT:6379}
   sendGrid:
     apiKey: ${SENDGRID_API_KEY}
-    fromEmail: quanducbui2023@gmail.com
-    templateRegistrationId: d-edda5c8267604fdfb5fe08227332ed6c
-    templateForgotId: d-fe449caceb8545679f70b7f1f3fabae9
+    fromEmail: quanducbui2017@gmail.com
+    templateRegistrationId: d-2c32e3d6a2644029abe158ce9457aab4
+    templateForgotId: d-a71ca0b41fc1437ca11a3002a0235c19
     imagePrev: https://res.cloudinary.com/dgwnoquie/image/upload/v1755789933/image-43_f3kmgh.jpg
     imageNext: https://res.cloudinary.com/dgwnoquie/image/upload/v1755790009/KHACH-BEP-15_bj8u43.jpg
     logo: https://res.cloudinary.com/dgwnoquie/image/upload/v1755791051/HAUS-logo_byhum7.jpg
